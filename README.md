@@ -43,17 +43,6 @@ Python 기반으로 분석하고 시각화하는 프로젝트입니다.
 
 ---
 
-## 📁 프로젝트 구조 (예시)
-real-estate-data-lab/
-│
-├── data/ # 실거래가, 부동산원 등 원본 데이터
-├── notebooks/ # 분석용 Jupyter Notebook 파일
-├── scripts/ # 데이터 전처리 및 API 수집 스크립트
-├── charts/ # 시각화 결과 이미지
-└── README.md
-
----
-
 ## 🚀 시작하기
 
 ### 1) 패키지 설치
