@@ -1,0 +1,27 @@
+# 기본 데이터 분석
+pandas
+numpy
+
+# 시각화
+matplotlib
+seaborn
+plotly
+
+# 데이터 요청(API 호출)
+requests
+
+# Jupyter 환경
+jupyter
+ipykernel
+
+# 날짜/시간 처리
+python-dateutil
+
+# 파일 인코딩, 경고 제거 등 유틸
+chardet
+
+# 지도 기반 분석 옵션 (필요 시)
+folium
+
+# 고급 분석 확장 옵션 (원하면 사용)
+scikit-learn
