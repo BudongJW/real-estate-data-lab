@@ -93,7 +93,6 @@ plt.show()
 
 **부동산 임장왕 | Real Estate Insight Creator**  
 데이터 기반 부동산 분석 콘텐츠를 만들고 있습니다.  
-(YouTube · Shorts · Blog 콘텐츠와 연계)
 
 ---
 
