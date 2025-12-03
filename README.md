@@ -44,4 +44,68 @@ Python 기반으로 분석하고 시각화하는 프로젝트입니다.
 ---
 
 ## 📁 프로젝트 구조 (예시)
+real-estate-data-lab/
+│
+├── data/ # 실거래가, 부동산원 등 원본 데이터
+├── notebooks/ # 분석용 Jupyter Notebook 파일
+├── scripts/ # 데이터 전처리 및 API 수집 스크립트
+├── charts/ # 시각화 결과 이미지
+└── README.md
 
+---
+
+## 🚀 시작하기
+
+### 1) 패키지 설치
+```bash
+pip install -r requirements.txt
+```
+
+### 2) Jupyter Notebook 실행
+```bash
+jupyter notebook
+```
+
+### 3) 실거래가 CSV 불러오기 예시
+```python
+import pandas as pd
+
+df = pd.read_csv("data/apt.csv")
+df['거래금액'] = df['거래금액'].str.replace(",", "").astype(int)
+
+df.head()
+```
+
+## 📈 예시: 월별 평균 매매가 시각화
+```python
+import matplotlib.pyplot as plt
+
+df['월'] = df['계약년월'].astype(str).str.slice(0,6)
+monthly = df.groupby('월')['거래금액'].mean()
+
+monthly.plot(figsize=(10,4))
+plt.title("월별 아파트 평균 매매가")
+plt.xlabel("월")
+plt.ylabel("거래금액(만원)")
+plt.show()
+```
+
+## 🏗 향후 계획 (To-Do)
+
+- [ ] 지역별 매매/전세 가격 대시보드 만들기 (Streamlit)
+- [ ] 전세가율 기반 갭투자 위험도 지도화
+- [ ] 과천·세종 등 특정 지역 심층 레포트 자동화
+- [ ] 뉴스 + 데이터 자동 스크립트 생성 기능
+- [ ] Notion/블로그 연동 자동화
+
+---
+
+## 📢 만든 사람
+
+**부동산 임장왕 | Real Estate Insight Creator**  
+데이터 기반 부동산 분석 콘텐츠를 만들고 있습니다.  
+(YouTube · Shorts · Blog 콘텐츠와 연계)
+
+---
+
+🎯 *데이터로 부동산 시장을 해석하고 싶은 모든 사람에게 열린 연구소입니다.*
